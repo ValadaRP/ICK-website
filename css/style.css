@@ -1,87 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;800&display=swap');
+body, h1,h2,h3,h4,h5,h6 {font-family: 'Nunito', sans-serif;}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
 
-:root{
-    --main-color: #d3ad7f;
-    --black: #13131a;
-    --bg: #010103;
-    --border: .1rem solid rgba(255,255,255,.3);
-}
 
-*{
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: .2s linear;
-}
 
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar{
-    width: .8rem;
-}
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb{
-    background: #fff;
-    border-radius: 5rem;
-}
-
-body{
-    background: var(--bg);
-}
-.header{
-    background: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 7%;
-    border-bottom: var(--border);
-    position: fixed;
-    top: 0;left: 0;right: 0;
-    z-index: 1000;
-}
-.header .logo img{
-    height: 6rem;
-}
-.header .navbar a{
-    margin: 0 1rem;
-    font-size: 1.6rem;
+.w3-sand nav{
     color: #fff;
+    
 }
-.header .navbar a:hover{
-    color: var(--main-color);
-    border-bottom:  .1rem solid var(--main-color);
-    padding-bottom: .5rem;
+#Napis_glowny{
+    font-family: 'Pushster', cursive;
 }
-.header .icons div{
-    color: #fff;
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-}
-.header .icons div:hover{
-    color: var(--main-color);
-}
-#menu-btn{
-    display: none;
-}
-/* Tutaj się zaczyna wyszukiwarka lupa */
-.header .search-from{
-    position: absolute;
-    top: 115%;right: 7%;
-    background: #fff;
-    width: 50rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #c78100 #eec67c;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #eec67c;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #c78100;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+  }

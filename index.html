@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Burgers</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+    </style>
+
 </head>
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img src="img/logo.png" alt="Zdjęcie">
-    </a>
-    <nav class="navbar">
-      <a href="#home">Strona główna</a>
-      <a href="#about">O nas</a>
-      <a href="#menu">Menu</a>
-      <a href="#products">Produkty</a>
-      <a href="#review">Ocena</a>
-      <a href="#contact">Kontakt</a>
-      <a href="#blogs">Blogi</a>
-    </nav>
+<body class="w3-sand">
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="img/logo.png" class="w3-padding" style="width:100%" >
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-black">
+          <i class="fa fa-home w3-xxlarge"></i>
+          <p>Strona główna</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-user w3-xxlarge"></i>
+          <p>O nas</p>
+        </a>
+        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-eye w3-xxlarge"></i>
+          <p>Zdjęcia</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-envelope w3-xxlarge"></i>
+          <p>Kontakt</p>
+        </a>
+      </nav>
+      <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="Navbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Strona główna</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">O nas</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Zdjęcia</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Kontakt</a>
+        </div>
+    </div>
+    <!-- Koniec sidebara -->
+    <div class="w3-padding-large" id="main">
+        <!-- Strona główna -->
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+            <h1 class="w3-jumbo" id="Napis_glowny">Caffe Shop</h1>
+            <img src="img/coffe_hands.jpg" alt="cofee" class="w3-image w3-section" width="995" height="1110">
+        </header>
 
-    <div class="icons">
-      <div class="fas fa-search" id="search-btn"></div>
-      <div class="fas fa-shopping-cart" id="cart-btn"></div>
-      <div class="fas fa-bars" id="menu-btn"></div>
+        <!-- O nas -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+              <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" id="Onas">O NAS</span></h5>
+              <p>Kawiarnia została otwarta w Jarosławiu przez Piotra Miciaka lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut ligula ut odio tempor laoreet nec sit amet ex. Phasellus quis nulla id diam tincidunt placerat eget vitae erat.</p>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                <p><i>"Simple ingredients prepared in a simple way - that's the best way to take your everyday cooking to a higher level.."</i></p>
+                <p>Jose Andres</p>
+              </div>
+              <img src="img/Onas.jpg" style="width:100%;max-width:1000px" class="w3-margin-top w3-image">
+              <p><strong>Godziny otwarcia:</strong> Codziennie od 06:00 do 15:00.</p>
+              <p><strong>Adres:</strong> Jarosław ul.3 Maja 3A</p>
+            </div>
+          </div>
     </div>
 
-    <!-- Tutaj się zaczyna lupa -->
-    <div class="search-form">
-      <input type="search" id="search-box" placeholder="Wpisz szukaną fraze">
-      <label for="search-box" class="fas fa-search"></label>
-    </div>
-    <!-- Koniec lupy -->
-  </header>
-  <script src="js/script.js"></script>
 </body>
 </html>
