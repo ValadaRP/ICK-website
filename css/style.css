@@ -5,9 +5,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: 'Nunito', sans-serif; }
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px;font-size: 1.2rem;}
 
-/* .zmianatla{
-  background-color:#222 ;
-} */
 
 .w3-sand nav{
     color: #fff;
