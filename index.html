@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Burgers</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <header class="header">
@@ -21,6 +22,19 @@
       <a href="#contact">Kontakt</a>
       <a href="#blogs">Blogi</a>
     </nav>
+
+    <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <!-- Tutaj się zaczyna lupa -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Wpisz szukaną fraze">
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+    <!-- Koniec lupy -->
   </header>
   <script src="js/script.js"></script>
 </body>
